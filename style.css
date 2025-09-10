@@ -1,0 +1,99 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Background Gradient Animation */
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #667eea, #764ba2, #ff6a00);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  text-align: right;
+  padding: 1rem 2rem;
+}
+
+.language-selector button {
+  background-color: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  margin-left: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.language-selector button:hover {
+  background-color: rgba(255,255,255,0.4);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .language-selector {
+    text-align: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .profile-img {
+    width: 100px;
+  }
+}

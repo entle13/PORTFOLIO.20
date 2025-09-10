@@ -1,0 +1,7 @@
+portfolio/
+│
+├── index.html
+├── styles.css
+├── script.js
+└── assets/
+    └── profile.jpg (your photo – placeholder for now)
